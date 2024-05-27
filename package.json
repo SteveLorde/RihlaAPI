@@ -14,7 +14,8 @@
     "@types/node": "^20.12.12",
     "axios": "^1.7.2",
     "express": "^4.19.2",
-    "mongodb": "^6.6.2"
+    "mongodb": "^6.6.2",
+    "socket.io": "^4.7.5"
   },
   "devDependencies": {
     "typescript": "^5.4.5"
