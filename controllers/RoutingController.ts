@@ -4,8 +4,6 @@ import {router} from "./BaseController"
 import {RoutingRequestDTO} from "../data/dto/requests/RoutingRequestDTO";
 import {routingService} from "../services/ServicesContainer";
 
-
-
 router.post('', (req : Request<RoutingRequestDTO>, res : Response<>) => {
     const startLocationReq = req.params.startLocation
     const destinationLocationReq = req.params.destinationLocation

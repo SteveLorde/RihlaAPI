@@ -2,6 +2,7 @@ import {MongoClient} from "mongodb"
 
 export class DataContext {
     constructor() {
+        this.InititateClient()
     }
 
      url = 'mongodb://localhost:27017';
@@ -12,6 +13,9 @@ export class DataContext {
 
      async InititateClient() {
          await this.client.connect()
+     }
+     async DisconnectClient() {
+         await this.client.close()
      }
 
 }
