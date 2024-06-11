@@ -9,7 +9,7 @@ export class Driver extends User{
         this.driverId = uuidService.GenerateID()
     }
 
-    driverId : string = ""
+    driverId : string
     car : Car = {} as Car
     previousRides : Ride[] = []
 
