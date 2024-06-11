@@ -1,11 +1,16 @@
 import {User} from "./User";
 import {Ride} from "./Ride";
 import {Car} from "./Car";
+import {uuidService} from "../../services/ServicesContainer";
 
-export interface Driver {
-    id : string
-    userId : string
-    car : Car
-    previousRides : Ride[]
-    user : User
+export class Driver extends User{
+    constructor() {
+        super();
+        this.driverId = uuidService.GenerateID()
+    }
+
+    driverId : string = ""
+    car : Car = {} as Car
+    previousRides : Ride[] = []
+
 }
